@@ -1,0 +1,524 @@
+@prefix bot: <https://w3id.org/bot#> .
+@prefix bpo: <https://w3id.org/bpo#> .
+@prefix bsdd: <http://example.org/bSDD#> .
+@prefix cc: <http://example.org/coclass#> .
+@prefix cen: <http://example.org/BIM_lighting_properties_standards/CEN_TC_274_Ontology#> .
+@prefix iddo: <https://w3id.org/iddo#> .
+@prefix ntr: <https://example.org/Database_K#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ntr:A1_LD_Notor65_Betaopti a rdfs:Class ;
+    rdfs:comment "NOTOR65 BETAOPTI PEND 1200 DI HL 840 ALU START/SINGLE" ;
+    rdfs:subClassOf ntr:Notor_65_Beta_Opti .
+
+ntr:Notor a rdfs:Class ;
+    rdfs:comment "Fagerhult’s classic interior luminaire Notor is available in several versions for suspended, surface mounted or recessed installation. Notor is an obvious choice in circumstances when there is a desire to create long, unbroken lines of light. Discreet or " .
+
+ntr:Notor_65_Beta_Opti a rdfs:Class ;
+    rdfs:comment "A light component for buildings",
+        "Suspended or ceiling-mounted workplace luminaire with direct or direct/indirect light. Beta Opti louvres provide high efficiency and optimal lighting comfort. Single or continuous installation." ;
+    rdfs:subClassOf bsdd:IfcLightFixture,
+        cc:UACLightfixture,
+        ntr:Notor ;
+    ntr:isDesignedFor ntr:ConferenceRoom .
+
+ntr:AM a rdf:Property ;
+    rdfs:domain ntr:A1_LD_Notor65_Betaopti ;
+    rdfs:range xsd:boolean ;
+    rdfs:seeAlso cen:dimming_method ;
+    iddo:GloballyUniqueIdentifier "0jGPV_emX0auTlyNQx4grP" .
+
+ntr:Adapter a rdf:Property ;
+    rdfs:domain ntr:A1_LD_Notor65_Betaopti ;
+    rdfs:range xsd:float .
+
+ntr:Art_no_ a rdf:Property ;
+    rdfs:domain ntr:A1_LD_Notor65_Betaopti ;
+    rdfs:range "NOTOR65 BETAOPTI PEND 1200 DI HL 840 ALU START/SINGLE" .
+
+ntr:Average_W a rdf:Property ;
+    rdfs:domain ntr:A1_LD_Notor65_Betaopti ;
+    rdfs:range xsd:integer ;
+    rdfs:seeAlso cen:constant_light_output_average_power ;
+    iddo:GloballyUniqueIdentifier "3B8KQ1WqfC8x5qTA1pA7PY" .
+
+ntr:Beam_angle_ a rdf:Property ;
+    rdfs:domain ntr:A1_LD_Notor65_Betaopti ;
+    rdfs:range xsd:string .
+
+ntr:Brand_of_driver a rdf:Property ;
+    rdfs:domain ntr:A1_LD_Notor65_Betaopti ;
+    rdfs:range xsd:integer .
+
+ntr:CCT_K a rdf:Property ;
+    rdfs:domain ntr:A1_LD_Notor65_Betaopti ;
+    rdfs:range xsd:integer ;
+    rdfs:seeAlso cen:Correlated_Colour_Temperature_CCT_ ;
+    iddo:GloballyUniqueIdentifier "0XeHsouWz8PxASJ4mpkdEY" .
+
+ntr:CLO_function_on a rdf:Property ;
+    rdfs:domain ntr:A1_LD_Notor65_Betaopti ;
+    rdfs:range xsd:integer ;
+    rdfs:seeAlso cen:Constant_Light_Output ;
+    iddo:GloballyUniqueIdentifier "3kbFNwkkb7gPUsnc_COBg4" .
+
+ntr:CLO_time_h a rdf:Property ;
+    rdfs:domain ntr:A1_LD_Notor65_Betaopti ;
+    rdfs:range xsd:integer ;
+    rdfs:seeAlso cen:median_useful_life ;
+    iddo:GloballyUniqueIdentifier "0NMpOQzNH679doR_IuOYUl" .
+
+ntr:CRI a rdf:Property ;
+    rdfs:domain ntr:A1_LD_Notor65_Betaopti ;
+    rdfs:range xsd:integer ;
+    rdfs:seeAlso cen:Colour_Rendering_Index_CRI_ ;
+    iddo:GloballyUniqueIdentifier "28UYB1MD91NhF5F8uF6VCZ" .
+
+ntr:Class a rdf:Property ;
+    rdfs:domain ntr:A1_LD_Notor65_Betaopti ;
+    rdfs:range xsd:string .
+
+ntr:Colour a rdf:Property ;
+    rdfs:domain ntr:A1_LD_Notor65_Betaopti ;
+    rdfs:range xsd:string ;
+    rdfs:seeAlso cen:Housing_colour ;
+    iddo:GloballyUniqueIdentifier "13i4dlOM1FvhfPVt5JElgA" .
+
+ntr:Connection a rdf:Property ;
+    rdfs:domain ntr:A1_LD_Notor65_Betaopti ;
+    rdfs:range xsd:integer .
+
+ntr:Corridor_function a rdf:Property ;
+    rdfs:domain ntr:A1_LD_Notor65_Betaopti ;
+    rdfs:range xsd:integer ;
+    rdfs:seeAlso cen:control_features ;
+    iddo:GloballyUniqueIdentifier "00aw6unKX0ghwxryKRoQm9" .
+
+ntr:Corrosion_class a rdf:Property ;
+    rdfs:domain ntr:A1_LD_Notor65_Betaopti ;
+    rdfs:range xsd:integer .
+
+ntr:Diameter_mm a rdf:Property ;
+    rdfs:domain ntr:A1_LD_Notor65_Betaopti ;
+    rdfs:range xsd:integer .
+
+ntr:Diffuser a rdf:Property ;
+    rdfs:domain ntr:A1_LD_Notor65_Betaopti ;
+    rdfs:range xsd:string .
+
+ntr:End_W a rdf:Property ;
+    rdfs:domain ntr:A1_LD_Notor65_Betaopti ;
+    rdfs:range xsd:integer ;
+    rdfs:seeAlso cen:constant_light_output_end_power ;
+    iddo:GloballyUniqueIdentifier "3UEOcatIDEMf_qdvydAlfg" .
+
+ntr:Height_mm a rdf:Property ;
+    rdfs:domain ntr:A1_LD_Notor65_Betaopti ;
+    rdfs:range xsd:integer ;
+    rdfs:seeAlso cen:Height ;
+    iddo:GloballyUniqueIdentifier "19Z9XKYDT4p8HR0ZbD_wO_" .
+
+ntr:IK_rating a rdf:Property ;
+    rdfs:domain ntr:A1_LD_Notor65_Betaopti ;
+    rdfs:range xsd:integer ;
+    rdfs:seeAlso cen:Electrical_safety_class ;
+    iddo:GloballyUniqueIdentifier "0Ias3th8D2cg4EvP_KqQcv" .
+
+ntr:IP_rating a rdf:Property ;
+    rdfs:domain ntr:A1_LD_Notor65_Betaopti ;
+    rdfs:range xsd:integer .
+
+ntr:Installation a rdf:Property ;
+    rdfs:domain ntr:A1_LD_Notor65_Betaopti ;
+    rdfs:range xsd:integer .
+
+ntr:Length_mm a rdf:Property ;
+    rdfs:domain ntr:A1_LD_Notor65_Betaopti ;
+    rdfs:range xsd:integer ;
+    rdfs:seeAlso cen:Length ;
+    iddo:GloballyUniqueIdentifier "1uJglYpRnFpQ4tStHaR2Pf" .
+
+ntr:Lens a rdf:Property ;
+    rdfs:domain ntr:A1_LD_Notor65_Betaopti ;
+    rdfs:range xsd:string .
+
+ntr:Life_time_LED_driver_max_10_failure_h a rdf:Property ;
+    rdfs:domain ntr:A1_LD_Notor65_Betaopti ;
+    rdfs:range xsd:integer ;
+    rdfs:seeAlso cen:control_gear_lifetime ;
+    iddo:GloballyUniqueIdentifier "3sOx4EgST3axh5ZPV_lkbS" .
+
+ntr:Light_Emitting_Surface a rdf:Property ;
+    rdfs:domain ntr:A1_LD_Notor65_Betaopti ;
+    rdfs:range xsd:string .
+
+ntr:Light_Source_Colour a rdf:Property ;
+    rdfs:domain ntr:A1_LD_Notor65_Betaopti ;
+    rdfs:range xsd:string .
+
+ntr:Light_control a rdf:Property ;
+    rdfs:domain ntr:A1_LD_Notor65_Betaopti ;
+    rdfs:range xsd:string ;
+    rdfs:seeAlso cen:Dimming_method ;
+    iddo:GloballyUniqueIdentifier "0jGPV_emX0auTlyNQx4grP" .
+
+ntr:Light_distribution a rdf:Property ;
+    rdfs:domain ntr:A1_LD_Notor65_Betaopti ;
+    rdfs:range xsd:boolean ;
+    rdfs:seeAlso cen:Type_of_distribution ;
+    iddo:GloballyUniqueIdentifier "28T0Q968jDwvyxAshmZRwz" .
+
+ntr:Light_source a rdf:Property ;
+    rdfs:domain ntr:A1_LD_Notor65_Betaopti ;
+    rdfs:range xsd:integer ;
+    rdfs:seeAlso cen:ILCOS_Light_source_type ;
+    iddo:GloballyUniqueIdentifier "0G4TAennPD5gzRoG2rlZv_" .
+
+ntr:Louvre a rdf:Property ;
+    rdfs:domain ntr:A1_LD_Notor65_Betaopti ;
+    rdfs:range "NOTOR65 BETAOPTI PEND 1200 DI HL 840 ALU START/SINGLE" ;
+    rdfs:seeAlso cen:Optical_system ;
+    iddo:GloballyUniqueIdentifier "0nxCXUkH97wPwN9azBYbMv" .
+
+ntr:Lumen_maintenance_L100_B50_h a rdf:Property ;
+    rdfs:domain ntr:A1_LD_Notor65_Betaopti ;
+    rdfs:range xsd:string .
+
+ntr:Lumen_maintenance_L70_B10_h a rdf:Property ;
+    rdfs:domain ntr:A1_LD_Notor65_Betaopti ;
+    rdfs:range xsd:integer .
+
+ntr:Lumen_maintenance_L70_B50_h a rdf:Property ;
+    rdfs:domain ntr:A1_LD_Notor65_Betaopti ;
+    rdfs:range xsd:integer .
+
+ntr:Lumen_maintenance_L80_B10_h a rdf:Property ;
+    rdfs:domain ntr:A1_LD_Notor65_Betaopti ;
+    rdfs:range xsd:integer .
+
+ntr:Lumen_maintenance_L80_B50_h a rdf:Property ;
+    rdfs:domain ntr:A1_LD_Notor65_Betaopti ;
+    rdfs:range xsd:integer .
+
+ntr:Lumen_maintenance_L90_B10_h a rdf:Property ;
+    rdfs:domain ntr:A1_LD_Notor65_Betaopti ;
+    rdfs:range xsd:integer .
+
+ntr:Lumen_maintenance_L90_B50_h a rdf:Property ;
+    rdfs:domain ntr:A1_LD_Notor65_Betaopti ;
+    rdfs:range xsd:integer .
+
+ntr:Lumen_maintenance_at_50_000_h a rdf:Property ;
+    rdfs:domain ntr:A1_LD_Notor65_Betaopti ;
+    rdfs:range xsd:integer ;
+    rdfs:seeAlso cen:median_useful_life ;
+    iddo:GloballyUniqueIdentifier "0NMpOQzNH679doR_IuOYUl" .
+
+ntr:Lumen_output a rdf:Property ;
+    rdfs:domain ntr:A1_LD_Notor65_Betaopti ;
+    rdfs:range xsd:integer ;
+    rdfs:seeAlso cen:Rated_luminous_flux_of_the_luminaire ;
+    iddo:GloballyUniqueIdentifier "2oxTEZw7TCPPcnnsapMO1u" .
+
+ntr:Luminance_class a rdf:Property ;
+    rdfs:domain ntr:A1_LD_Notor65_Betaopti ;
+    rdfs:range xsd:string .
+
+ntr:MCB_B10A a rdf:Property ;
+    rdfs:domain ntr:A1_LD_Notor65_Betaopti ;
+    rdfs:range xsd:integer .
+
+ntr:MCB_B16A a rdf:Property ;
+    rdfs:domain ntr:A1_LD_Notor65_Betaopti ;
+    rdfs:range xsd:integer .
+
+ntr:MCB_C10A a rdf:Property ;
+    rdfs:domain ntr:A1_LD_Notor65_Betaopti ;
+    rdfs:range xsd:integer ;
+    rdfs:seeAlso cen:circuit_number ;
+    iddo:GloballyUniqueIdentifier "2vwn75Kg55RuoCwjIK1l_l" .
+
+ntr:MCB_C16A a rdf:Property ;
+    rdfs:domain ntr:A1_LD_Notor65_Betaopti ;
+    rdfs:range xsd:integer .
+
+ntr:Mains_frequency_Hz a rdf:Property ;
+    rdfs:domain ntr:A1_LD_Notor65_Betaopti ;
+    rdfs:range xsd:integer ;
+    rdfs:seeAlso cen:nominal_frequency ;
+    iddo:GloballyUniqueIdentifier "22IpUkOwD2iOIVugd8CAfb" .
+
+ntr:Max_ambient_temperature_C a rdf:Property ;
+    rdfs:domain ntr:A1_LD_Notor65_Betaopti ;
+    rdfs:range xsd:integer ;
+    rdfs:seeAlso cen:Maximal_Ambient_Temperature ;
+    iddo:GloballyUniqueIdentifier "0f2B86WL1DauqVXMD_Svdh" .
+
+ntr:Max_post_height_m a rdf:Property ;
+    rdfs:domain ntr:A1_LD_Notor65_Betaopti ;
+    rdfs:range xsd:integer .
+
+ntr:Min_ambient_temperature_C a rdf:Property ;
+    rdfs:domain ntr:A1_LD_Notor65_Betaopti ;
+    rdfs:range xsd:integer ;
+    rdfs:seeAlso cen:Minimal_Ambient_Temperature ;
+    iddo:GloballyUniqueIdentifier "2gr49_xaP46O1yRdKp3PXW" .
+
+ntr:Miscellaneous a rdf:Property ;
+    rdfs:domain ntr:A1_LD_Notor65_Betaopti ;
+    rdfs:range "NOTOR65 BETAOPTI PEND 1200 DI HL 840 ALU START/SINGLE" .
+
+ntr:Module a rdf:Property ;
+    rdfs:domain ntr:A1_LD_Notor65_Betaopti ;
+    rdfs:range xsd:integer .
+
+ntr:NTC_function a rdf:Property ;
+    rdfs:domain ntr:A1_LD_Notor65_Betaopti ;
+    rdfs:range xsd:integer .
+
+ntr:No_of_LEDs a rdf:Property ;
+    rdfs:domain ntr:A1_LD_Notor65_Betaopti ;
+    rdfs:range xsd:string .
+
+ntr:Number_of_light_units a rdf:Property ;
+    rdfs:domain ntr:A1_LD_Notor65_Betaopti ;
+    rdfs:range xsd:string .
+
+ntr:PWM a rdf:Property ;
+    rdfs:domain ntr:A1_LD_Notor65_Betaopti ;
+    rdfs:range xsd:boolean ;
+    rdfs:seeAlso cen:dimming_method ;
+    iddo:GloballyUniqueIdentifier "0jGPV_emX0auTlyNQx4grP" .
+
+ntr:PWM_Hz a rdf:Property ;
+    rdfs:domain ntr:A1_LD_Notor65_Betaopti ;
+    rdfs:range xsd:integer .
+
+ntr:Photometric_code a rdf:Property ;
+    rdfs:domain ntr:A1_LD_Notor65_Betaopti ;
+    rdfs:range xsd:integer ;
+    rdfs:seeAlso cen:light_distribution_curve_LDC ;
+    iddo:GloballyUniqueIdentifier "1lEpo0LO16FPpSj0jFwIOu" .
+
+ntr:Potted_driver a rdf:Property ;
+    rdfs:domain ntr:A1_LD_Notor65_Betaopti ;
+    rdfs:range xsd:integer .
+
+ntr:Power_factor_100_ a rdf:Property ;
+    rdfs:domain ntr:A1_LD_Notor65_Betaopti ;
+    rdfs:range xsd:float ;
+    rdfs:seeAlso cen:Power_Factor ;
+    iddo:GloballyUniqueIdentifier "3LBrQkLDDFheBOxrGk8Zr_" .
+
+ntr:Power_factor_50_ a rdf:Property ;
+    rdfs:domain ntr:A1_LD_Notor65_Betaopti ;
+    rdfs:range xsd:float .
+
+ntr:Power_on_last_level a rdf:Property ;
+    rdfs:domain ntr:A1_LD_Notor65_Betaopti ;
+    rdfs:range xsd:integer ;
+    rdfs:seeAlso cen:control_features ;
+    iddo:GloballyUniqueIdentifier "00aw6unKX0ghwxryKRoQm9" .
+
+ntr:Projected_wind_area_m2 a rdf:Property ;
+    rdfs:domain ntr:A1_LD_Notor65_Betaopti ;
+    rdfs:range xsd:string .
+
+ntr:Protective_glass a rdf:Property ;
+    rdfs:domain ntr:A1_LD_Notor65_Betaopti ;
+    rdfs:range xsd:string .
+
+ntr:RAL a rdf:Property ;
+    rdfs:domain ntr:A1_LD_Notor65_Betaopti ;
+    rdfs:range xsd:string .
+
+ntr:RGB a rdf:Property ;
+    rdfs:domain ntr:A1_LD_Notor65_Betaopti ;
+    rdfs:range xsd:string ;
+    rdfs:seeAlso cen:Colour_Appearance ;
+    iddo:GloballyUniqueIdentifier "24nX7s16TBMe_Qfk_rKDn3" .
+
+ntr:Rated_supply_voltage_V a rdf:Property ;
+    rdfs:domain ntr:A1_LD_Notor65_Betaopti ;
+    rdfs:range xsd:integer ;
+    rdfs:seeAlso cen:Rated_voltage ;
+    iddo:GloballyUniqueIdentifier "3_yIxYFj1E9zXdzpVaCgt" .
+
+ntr:Reflector a rdf:Property ;
+    rdfs:domain ntr:A1_LD_Notor65_Betaopti ;
+    rdfs:range xsd:string .
+
+ntr:Rf_fidelity_index a rdf:Property ;
+    rdfs:domain ntr:A1_LD_Notor65_Betaopti ;
+    rdfs:range xsd:integer .
+
+ntr:Rg_gamut_index a rdf:Property ;
+    rdfs:domain ntr:A1_LD_Notor65_Betaopti ;
+    rdfs:range xsd:integer .
+
+ntr:SDCM a rdf:Property ;
+    rdfs:domain ntr:A1_LD_Notor65_Betaopti ;
+    rdfs:range xsd:integer ;
+    rdfs:seeAlso cen:Initial_Colour_Tolerance ;
+    iddo:GloballyUniqueIdentifier "1NvFrN1kP1MBnwjfcEtZS9" .
+
+ntr:Socket a rdf:Property ;
+    rdfs:domain ntr:A1_LD_Notor65_Betaopti ;
+    rdfs:range xsd:string .
+
+ntr:Standby_W a rdf:Property ;
+    rdfs:domain ntr:A1_LD_Notor65_Betaopti ;
+    rdfs:range xsd:integer ;
+    rdfs:seeAlso cen:Standby_Power ;
+    iddo:GloballyUniqueIdentifier "0TzE4sMDv1pwfygK1xxjm5" .
+
+ntr:Surge_protection_CM_kV_kA a rdf:Property ;
+    rdfs:domain ntr:A1_LD_Notor65_Betaopti ;
+    rdfs:range xsd:float ;
+    rdfs:seeAlso cen:Surge_protection ;
+    iddo:GloballyUniqueIdentifier "3yprn4XcD1CP0A67A_WxFb" .
+
+ntr:Surge_protection_DM_kV_kA a rdf:Property ;
+    rdfs:domain ntr:A1_LD_Notor65_Betaopti ;
+    rdfs:range xsd:float ;
+    rdfs:seeAlso cen:Surge_protection ;
+    iddo:GloballyUniqueIdentifier "3yprn4XcD1CP0A67A_WxFb" .
+
+ntr:Switch_control_max_no_ a rdf:Property ;
+    rdfs:domain ntr:A1_LD_Notor65_Betaopti ;
+    rdfs:range xsd:integer .
+
+ntr:System_wattage_start_W a rdf:Property ;
+    rdfs:domain ntr:A1_LD_Notor65_Betaopti ;
+    rdfs:range xsd:integer ;
+    rdfs:seeAlso cen:constant_light_output_start_power ;
+    iddo:GloballyUniqueIdentifier "2d9pUf_QXEtxHYdBYou0_3" .
+
+ntr:Tilt_ a rdf:Property ;
+    rdfs:domain ntr:A1_LD_Notor65_Betaopti ;
+    rdfs:range xsd:string .
+
+ntr:Tunable_White a rdf:Property ;
+    rdfs:domain ntr:A1_LD_Notor65_Betaopti ;
+    rdfs:range xsd:integer ;
+    rdfs:seeAlso cen:Colour_temperature_adjusting_range ;
+    iddo:GloballyUniqueIdentifier "1BRqnx6Qr6G8KJpH_WYPD_" .
+
+ntr:Tunable_White_colour_range_K a rdf:Property ;
+    rdfs:domain ntr:A1_LD_Notor65_Betaopti ;
+    rdfs:range xsd:integer .
+
+ntr:Turn_ a rdf:Property ;
+    rdfs:domain ntr:A1_LD_Notor65_Betaopti ;
+    rdfs:range xsd:string .
+
+ntr:UGR a rdf:Property ;
+    rdfs:domain ntr:A1_LD_Notor65_Betaopti ;
+    rdfs:range xsd:string .
+
+ntr:W a rdf:Property ;
+    rdfs:domain ntr:A1_LD_Notor65_Betaopti ;
+    rdfs:range xsd:integer ;
+    rdfs:seeAlso cen:rated_input_power ;
+    iddo:GloballyUniqueIdentifier "17a067965CqhDelQ_Y3mcP" .
+
+ntr:Weight_kg a rdf:Property ;
+    rdfs:domain ntr:A1_LD_Notor65_Betaopti ;
+    rdfs:range xsd:float ;
+    rdfs:seeAlso cen:Weight ;
+    iddo:GloballyUniqueIdentifier "1RPyGAgMf4hRTZ0DogLFnU" .
+
+ntr:Width_mm a rdf:Property ;
+    rdfs:domain ntr:A1_LD_Notor65_Betaopti ;
+    rdfs:range xsd:integer ;
+    rdfs:seeAlso cen:Width ;
+    iddo:GloballyUniqueIdentifier "1dPvrZN3vEIB0n0vwYvDcX" .
+
+ntr:isDesignedFor a owl:ObjectProperty ;
+    rdfs:comment "The isDesignedFor property is used to indicate the intended or appropriate use of an object. It specifies the environment, context, or purpose for which the object has been designed or optimized, and can be used to represent knowledge about the relationship between an object and its intended use." ;
+    rdfs:isDefinedBy ntr: .
+
+ntr:lm_W a rdf:Property ;
+    rdfs:domain ntr:A1_LD_Notor65_Betaopti ;
+    rdfs:range xsd:integer ;
+    rdfs:seeAlso cen:Luminous_efficacy ;
+    iddo:GloballyUniqueIdentifier "1QmFILGbX6_BfU63rG5mrh" .
+
+ntr:lm_m a rdf:Property ;
+    rdfs:domain ntr:A1_LD_Notor65_Betaopti ;
+    rdfs:range xsd:integer .
+
+<https://example.org/fagerhult_notor_ontology> a owl:Ontology .
+
+iddo:GloballyUniqueIdentifier a owl:DatatypeProperty ;
+    rdfs:comment "Unique identifier generated using the algorithm denoted in RFC 4122" ;
+    rdfs:isDefinedBy iddo: .
+
+cen:Colour_Appearance rdfs:seeAlso cc:LTTE_Color_temperature ;
+    owl:equivalentProperty bsdd:ColorAppearance .
+
+cen:Colour_Rendering_Index_CRI_ owl:equivalentProperty bsdd:ColorRendering_Index,
+        cc:LTTR_Color_rendering .
+
+cen:Correlated_Colour_Temperature_CCT_ rdfs:seeAlso bsdd:ColorTemperature,
+        cc:LTTE_Color_temperature .
+
+cen:Dimming_method rdfs:seeAlso bsdd:DimmerType,
+        cc:ELDM_Dimming .
+
+cen:Electrical_safety_class rdfs:seeAlso cc:ELWC_Electric_wire_class .
+
+cen:Height owl:equivalentProperty bsdd:Height_of_housing,
+        cc:MEHE_Height .
+
+cen:Housing_colour rdfs:seeAlso cc:LTTE_Color_temperature ;
+    owl:equivalentProperty bsdd:ColorAppearance .
+
+cen:Length owl:equivalentProperty bsdd:Length_housing,
+        cc:MELH_Length .
+
+cen:Luminous_efficacy rdfs:seeAlso cc:LTLS_Luminance ;
+    owl:equivalentProperty bsdd:Constant_light_output_CLO_,
+        bsdd:Specific_luminous_efficacy .
+
+cen:Maximal_Ambient_Temperature rdfs:seeAlso bsdd:Operating_temperature ;
+    owl:equivalentProperty bsdd:Power_consumption_in_standby_mode,
+        cc:THOX_Operating_temperature_max .
+
+cen:Minimal_Ambient_Temperature rdfs:seeAlso bsdd:Operating_temperature ;
+    owl:equivalentProperty cc:THOM_Operating_temperature_min .
+
+cen:Power_Factor rdfs:seeAlso cc:ELLF_Load_factor ;
+    owl:equivalentProperty bsdd:PowerFactor .
+
+cen:Rated_luminous_flux_of_the_luminaire rdfs:seeAlso cc:LTLS_Luminance ;
+    owl:equivalentProperty bsdd:Rated_luminous_flux_according_to_IEC_62722_2_1 .
+
+cen:Weight owl:equivalentProperty bsdd:Weight,
+        cc:MSWT_Weight .
+
+cen:Width owl:equivalentProperty bsdd:Housing_width,
+        cc:MEWD_Width .
+
+cen:nominal_frequency owl:equivalentProperty bsdd:NominalFrequency,
+        cc:ELFN_Nominal_frequency .
+
+bsdd:ConferenceRooms a bot:Space .
+
+bsdd:IfcLightFixture rdfs:subClassOf bpo:Element,
+        bpo:product .
+
+cc:BABMeetingSpace a bot:Space .
+
+cc:UACLightfixture rdfs:subClassOf bpo:Element,
+        bpo:product .
+
+ntr:ConferenceRoom owl:equivalentClass bsdd:ConferenceRooms,
+        cc:BABMeetingSpace .
+
+cen:dimming_method rdfs:seeAlso bsdd:DimmerType,
+        cc:ELDM_Dimming .
+
